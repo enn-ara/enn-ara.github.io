@@ -115,9 +115,27 @@
 <link rel="stylesheet" type="text/css" href="https://ennara.github.io/assets/css/moonmode.min.css" />
 <!-- Moonmode end -->
 
+<!-- Morphext start -->
+<!-- source: https://github.com/MrSaints/Morphext -->
+<link href="https://ennara.github.io/assets/css/morphext.css" rel="stylesheet" />
+<script src="https://ennara.github.io/assets/js/morphext.min.js"></script>
+<!-- Morphext end -->
+
 <script type="text/javascript">
 
   $(document).ready(function() {
+    
+    $("#js-rotating").Morphext({
+      // The [in] animation type. Refer to Animate.css for a list of available animations.
+      animation: "flipInX",
+      // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
+      separator: ",",
+      // The delay between the changing of each phrase in milliseconds.
+      speed: 2000,
+      complete: function () {
+        // Called after the entrance animation is executed.
+      }
+    });
 
     function get_markdown(URL) {
       $.ajax({
@@ -167,7 +185,7 @@
 <!-- source : http://github.com/gdemir/whatsapp -->
 <link rel="stylesheet" type="text/css" href="https://ennara.github.io/assets/css/whatsapp.min.css" />
 <!-- whatsapp end -->
-  
+
 <style type="text/css">
   /* locals */
 
@@ -198,7 +216,8 @@
       <div class="container text-center">
         <img src="https://raw.githubusercontent.com/ennara/ennara.github.io/master/assets/img/default.png" width="150" />
         <h3>Enn Ara</h3>
-        <h4>Daha hızlı ve kolay ürün bulmak için tasarlanan güçlü bir uygulama</h4>
+        <h4><b id="js-rotating">Barkodu okut, Ürünü bul, Ürünü seç, Ürün karşılaştır!</b><br/></h4>
+        <h5>Daha hızlı ve kolay ürün bulmak için tasarlanan güçlü bir uygulama</h5>
 
         <div class="row">
           <div class="col col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
