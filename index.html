@@ -135,7 +135,7 @@
       $("#intro").toggleClass("moonmode-page");
     });
 
-    //$("#path").hide();
+    $("#page").hide();
     $('.page').click(function() {
       var PAGE = $(this).attr('id');
       var MARKDOWN = get_markdown("https://raw.githubusercontent.com/ennara/ennara.github.io/master/pages/_" + PAGE );
@@ -144,7 +144,9 @@
       var PAGETEXT = $(this).text();
       //$("#subpath").html(PAGETEXT);
       //$("#path").show();
-      $("#intro").html(HTML);
+
+      $("#intro").hide();
+      $("#page").html(HTML);
       $('pre code').each(function(i, e) { hljs.highlightBlock(e) });
     });
 
@@ -170,7 +172,7 @@
   #intro { font-size: 12px; color: #777; }
   #intro h3 { margin: 0; padding: 10px; font-size: 33px; font-weight: 300; line-height: 1.1; }
   #intro h5 { margin-top: 20px; margin-bottom: 20px; font-size: 12px; font-weight: 500; }
-
+  #page {}
   #about { border-top: 1px solid #ccc; }
 
   .turquoise_color { color: #03968a; }
@@ -183,57 +185,62 @@
   <div id="particles-js" style="background-color: #2d2d2d;"></div>
 
   <div class="container">
-    <div id="intro" style="background-color: #cbfbf61a; padding: 2em; border-radius: 3px solid #ddd;">
-      <div class="container text-center" style="margin-top: 12%; max-width: 335px;">
+    <div id="intro">
 
+      <div class="container text-center" style="margin-top: 12%; max-width: 335px;">
         <img src="https://raw.githubusercontent.com/ennara/ennara.github.io/master/assets/img/default.png" width="150" />
         <h3>Enn Ara</h3>
-      </div>
 
-      <div class="row">
-        <div class="col col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
-        <div class="col col-lg-8 col-md-8 col-sm-8 col-xs-8"><hr></div>
-        <div class="col col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
-      </div>
 
-      <div class="row" style="position:relative;">
-        <div class="col col-lg col-md d-none d-md-flex"></div>
-        <div class="col col-lg col-md col-sm col-xs text-center">
-          <img src="https://raw.githubusercontent.com/ennara/ennara.github.io/master/assets/img/google.png" width="200" />
+        <div class="row">
+          <div class="col col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+          <div class="col col-lg-8 col-md-8 col-sm-8 col-xs-8"><hr></div>
+          <div class="col col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
         </div>
-        <div class="col col-lg col-md col-sm col-xs text-center">
-          <img src="https://raw.githubusercontent.com/ennara/ennara.github.io/master/assets/img/apple.png" width="200" />
+
+        <div class="row" style="position:relative;">
+          <div class="col col-lg col-md d-none d-md-flex"></div>
+          <div class="col col-lg col-md col-sm col-xs text-center">
+            <img src="https://raw.githubusercontent.com/ennara/ennara.github.io/master/assets/img/google.png" width="200" />
+          </div>
+          <div class="col col-lg col-md col-sm col-xs text-center">
+            <img src="https://raw.githubusercontent.com/ennara/ennara.github.io/master/assets/img/apple.png" width="200" />
+          </div>
+          <div class="col col-lg col-md d-none d-md-flex"></div>
         </div>
-        <div class="col col-lg col-md d-none d-md-flex"></div>
+
       </div>
 
     </div>
+    <div id="page" style="background-color: #cbfbf61a; padding: 2em; border-radius: 3px solid #ddd;"></div>
+  </div>
 
-    <nav class="navbar navbar-expand-lg fixed-bottom navbar-dark" style="background-color: #03968a;">
-      <a class="navbar-brand" href="http://ennara.github.io">Enn Ara</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item"><a class="nav-link page" href="#" id="terms-of-use.md">Kullanım Şartları</a></li>
-          <li class="nav-item"><a class="nav-link page" href="#" id="privacy-policy.md">Gizlilik Sözleşmesi</a></li>
-          <li class="nav-item"><a class="nav-link page" href="#" id="about.md">Enn Ara Hakkında</a></li>
-        </ul>
-      </div>
-    </nav>
+  <nav class="navbar navbar-expand-lg fixed-bottom navbar-dark" style="background-color: #03968a;">
+    <a class="navbar-brand" href="http://ennara.github.io">Enn Ara</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <!-- Moonmode logo start -->
-    <div id="moonmode-logo" style="top:0; left:0;"></div>
-    <!-- Moonmode logo end -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link page" href="#" id="terms-of-use.md">Kullanım Şartları</a></li>
+        <li class="nav-item"><a class="nav-link page" href="#" id="privacy-policy.md">Gizlilik Sözleşmesi</a></li>
+        <li class="nav-item"><a class="nav-link page" href="#" id="about.md">Enn Ara Hakkında</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- backtotop start -->
-    <!-- source : http://github.com/gdemir/backtotop -->
-    <link rel="stylesheet" type="text/css" href="https://ennara.github.io/assets/css/backtotop.min.css" />
-    <a href="#" id="backtotop" title="Back to top">&uarr;</a>
-    <script src="https://ennara.github.io/assets/js/backtotop.min.js"></script>
-    <!-- backtotop end -->
+  <!-- Moonmode logo start -->
+  <div id="moonmode-logo" style="top:0; left:0;"></div>
+  <!-- Moonmode logo end -->
 
-  </body>
-  </html>
+  <!-- backtotop start -->
+  <!-- source : http://github.com/gdemir/backtotop -->
+  <link rel="stylesheet" type="text/css" href="https://ennara.github.io/assets/css/backtotop.min.css" />
+  <a href="#" id="backtotop" title="Back to top">&uarr;</a>
+  <script src="https://ennara.github.io/assets/js/backtotop.min.js"></script>
+  <!-- backtotop end -->
+
+</body>
+</html>
