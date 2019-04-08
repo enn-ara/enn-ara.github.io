@@ -120,6 +120,18 @@
       $("#readme").toggleClass("moonmode-page");
     });
 
+    $("#path").hide();
+    $('.page').click(function() {
+      var PAGE = $(this).attr('id');
+      var MARKDOWN = get_markdown("https://raw.githubusercontent.com/ennara/ennara.github.io/master/pages/_" + PAGE );
+      var converter = new showdown.Converter();
+      var HTML = converter.makeHtml(MARKDOWN);
+      var PAGETEXT = $(this).text();
+      $("#subpath").html(PAGETEXT);
+      $("#path").show()
+      $("#readme").html(HTML);
+      $('pre code').each(function(i, e) { hljs.highlightBlock(e) });
+    });
 
     // autoplay='autoplay'
     var music_level = Math.floor(Math.random() * 24 + 1);
@@ -127,8 +139,8 @@
       "<audio controls='controls' hidden='true' loop='true'>" +
       "<source src='https://ennara.github.io/assets/music/music" + music_level + ".mp3' type='audio/mp3' />" +
       "</audio>"
-      );
-
+      );   
+    
   });
 </script>
 
