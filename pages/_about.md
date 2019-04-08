@@ -2,7 +2,7 @@
 
 ## ÖZELLİK
 
-- Kare kod ve Barkod Okuyucu, size gerekli olan tüm özelliklere sahip modern kare kod ve barkod okuyucudur. `Migros`, `Carrefoursa` ve `A101` gibi popüler çevrimiçi hizmetlerden alınan sonuçlar da dahil, ek bilgi almak için herhangi bir kare kodu veya barkodu okutun; %100 ÜCRETSİZ!
+- Enn Ara, size gerekli olan tüm özelliklere sahip modern kare kod ve barkod okuyucudur. `Migros`, `Carrefoursa` ve `A101` gibi popüler çevrimiçi hizmetlerden alınan sonuçlar da dahil, ek bilgi almak için herhangi bir kare kodu veya barkodu okutun; %100 ÜCRETSİZ!
 
 - Google Safe Browsing teknolojisini içeren ile Chrome Custom Tabs ile kötü amaçlı bağlantılardan korunun ve daha kısa yükleme sürelerinin keyfini çıkarın.
 
