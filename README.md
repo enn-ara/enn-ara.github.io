@@ -8,6 +8,7 @@
  - [Highlightjs](https://highlightjs.org)
  - [Github-markdown-css](https://github.com/sindresorhus/github-markdown-css) 
  - [Animatecss](https://daneden.github.io/animate.css)
+ - [Morphext](https://github.com/MrSaints/Morphext)
  - [Showdownjs](https://github.com/showdownjs/showdown)
  - [Particlesjs](https://github.com/VincentGarreau/particles.js)
  - [Whatsapp](http://github.com/gdemir/whatsapp)
