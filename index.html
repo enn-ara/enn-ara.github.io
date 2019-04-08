@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Enn Ara" />
+  <meta name="description" content="Enn Ara" />
+  <meta name="keywords" content="Enn Ara" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Enn Ara</title>
+
+  <link rel="shortcut icon" href="https://raw.githubusercontent.com/ennara/ennara.github.io/master/favicon.ico" />
+
+  <!-- turkuazcss start -->
+  <!-- source: https://github.com/turkuazcss/turkuazcss -->
+  <link rel="stylesheet" type="text/css" href="https://ennara.github.io/assets/css/turkuaz.css" />
+  <script src="https://ennara.github.io/assets/js/turkuaz.js"></script>
+  <!-- turkuazcss end -->
+
+  <!-- <link rel="stylesheet" type="text/css" href="https://ennara.github.io/assets/css/bootstrap.min.css" /> -->
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+
+  <script src="https://ennara.github.io/assets/js/html5shiv.min.js"></script>
+  <script src="https://ennara.github.io/assets/js/respond.min.js"></script>
+
+<![endif]-->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<!-- <script src="https://ennara.github.io/assets/js/bootstrap.min.js"></script> -->
+
+<!-- Google Analytics start -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-111463108-1']);
+
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- Google Analytics end -->
+
+<!-- Highlightjs start -->
+<!-- source: http://highlightjs.org -->
+<link rel="stylesheet" type="text/css" href="https://ennara.github.io/assets/css/highlight.pack.css" />
+<script src="https://ennara.github.io/assets/js/highlight.pack.js"></script>
+<script type="text/javascript">
+  hljs.initHighlightingOnLoad();
+</script>
+<!-- Highlightjs end -->
+
+<!-- Animatecss start -->
+<!-- source: https://daneden.github.io/animate.css/ -->
+<link rel="stylesheet" type="text/css" href="https://ennara.github.io/assets/css/animate.min.css" />
+<!-- Animatecss end -->
+
+<!-- Github-markdown-css start -->
+<!-- source: https://github.com/sindresorhus/github-markdown-css -->
+<link rel="stylesheet" type="text/css" href="https://ennara.github.io/assets/css/github-markdown.css" />
+<style>
+  .markdown-body {
+    box-sizing: border-box;
+    min-width: 200px;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 45px;
+  }
+
+  @media (max-width: 767px) {
+    .markdown-body {
+      padding: 15px;
+    }
+  }
+</style>
+<!-- Github-markdown-css end -->
+
+<!-- Particlesjs start -->
+<!-- source: https://github.com/VincentGarreau/particles.js -->
+<script src="https://ennara.github.io/assets/js/particles.min.js"></script>
+<style type="text/css">
+  canvas {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+  }
+</style>
+<script type="text/javascript">
+  particlesJS.load('particles-js', 'https://ennara.github.io/assets/js/particles.json', function() {
+    console.log('particles.js loaded - callback');
+  });
+</script>
+<!-- Particlesjs end -->
+
+<!-- Showdownjs start -->
+<!-- source: https://github.com/showdownjs/showdown -->
+<script src="https://ennara.github.io/assets/js/showdown.min.js"></script>
+<!-- Showdownjs end -->
+
+<!-- Moonmode start -->
+<!-- source : http://github.com/gdemir/moonmode -->
+<link rel="stylesheet" type="text/css" href="https://ennara.github.io/assets/css/moonmode.min.css" />
+<!-- Moonmode end -->
+
+<script type="text/javascript">
+
+  $(document).ready(function() {
+
+
+    $("#moonmode-logo").click(function() {
+      $("body").toggleClass("moonmode-body");
+      $("#readme").toggleClass("moonmode-page");
+    });
+
+
+    // autoplay='autoplay'
+    var music_level = Math.floor(Math.random() * 24 + 1);
+    $("#soundtrack").html(
+      "<audio controls='controls' hidden='true' loop='true'>" +
+      "<source src='https://ennara.github.io/assets/music/music" + music_level + ".mp3' type='audio/mp3' />" +
+      "</audio>"
+      );
+
+  });
+</script>
+
+<style type="text/css">
+  /* locals */
+
+  @import  url('https://fonts.googleapis.com/css?family=Nunito:300,400,600');
+  body { font-family: 'Nunito', sans-serif;  background-color: #fdfdfd; }
+  code { color: #c7254e; }
+  .container { word-wrap: break-word; }
+
+  #intro { font-size: 12px; color: #777; }
+  #intro h3 { margin: 0; padding: 10px; font-size: 33px; font-weight: 300; line-height: 1.1; }
+  #intro h5 { margin-top: 20px; margin-bottom: 20px; font-size: 12px; font-weight: 500; }
+
+  #about { border-top: 1px solid #ccc; }
+
+  .turquoise_color { color: turquoise; }
+  .turquoise_border { border:3px solid turquoise; border-radius: 8px; }
+
+  /* add-on */
+
+  .list-inline {
+    padding-left: 0;
+    list-style: none;
+  }
+  .list-inline>li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  .github-background {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    padding: 0.7em;
+    background-color: #f5f7f9;
+  }
+  /* overwrite TurkuazCSS */
+
+  blockquote { background-color: transparent; }
+  ol, ul, dl { list-style-type: disc; }
+</style>
+</head>
+<body>
+
+  <div id="particles-js" style="background-color: #2d2d2d;"></div>
+
+
+  <div id="intro">
+    <div class="container yazi-ortala" style="margin-top: 5%; max-width: 335px;">
+
+      <img src="https://raw.githubusercontent.com/ennara/ennara.github.io/master/assets/img/default.png" width="150" />
+      <h3>EnnAra<span class="turquoise_color" style="font-size:43px;">1</span></h3>
+
+    </div>
+  </div>
+
+  <!-- Moonmode logo start -->
+  <div id="moonmode-logo" style="top:0; left:0;"></div>
+  <!-- Moonmode logo end -->
+
+  <!-- backtotop start -->
+  <!-- source : http://github.com/gdemir/backtotop -->
+  <link rel="stylesheet" type="text/css" href="https://ennara.github.io/assets/css/backtotop.min.css" />
+  <a href="#" id="backtotop" title="Back to top">&uarr;</a>
+  <script src="https://ennara.github.io/assets/js/backtotop.min.js"></script>
+  <!-- backtotop end -->
+
+</body>
+</html>
