@@ -125,16 +125,16 @@
       $("#readme").toggleClass("moonmode-page");
     });
 
-    $("#path").hide();
+    //$("#path").hide();
     $('.page').click(function() {
       var PAGE = $(this).attr('id');
       var MARKDOWN = get_markdown("https://raw.githubusercontent.com/ennara/ennara.github.io/master/pages/_" + PAGE );
       var converter = new showdown.Converter();
       var HTML = converter.makeHtml(MARKDOWN);
       var PAGETEXT = $(this).text();
-      $("#subpath").html(PAGETEXT);
-      $("#path").show()
-      $("#readme").html(HTML);
+      //$("#subpath").html(PAGETEXT);
+      //$("#path").show();
+      $("#intro").html(HTML);
       $('pre code').each(function(i, e) { hljs.highlightBlock(e) });
     });
 
@@ -197,7 +197,7 @@
   <div id="particles-js" style="background-color: #2d2d2d;"></div>
 
   <div id="intro">
-    <div class="container yazi-ortala" style="margin-top: 5%; max-width: 335px;">
+    <div class="container text-center" style="margin-top: 5%; max-width: 335px;">
 
       <img src="https://raw.githubusercontent.com/ennara/ennara.github.io/master/assets/img/default.png" width="150" />
       <h3>EnnAra<span class="turquoise_color" style="font-size:43px;">1</span></h3>
@@ -205,7 +205,7 @@
     </div>
   </div>
 
-  <nav class="navbar fixed-bottom navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg fixed-bottom navbar-light bg-light">
     <a class="navbar-brand" href="#">Enn Ara</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
