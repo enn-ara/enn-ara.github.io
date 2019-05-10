@@ -136,7 +136,7 @@
           c = new countUp(ID, 0, 500, 1, 2.5);
           c.start();
         },
-        error : function (request, error) { alert(error);}
+        error : function(xhr, status, error) { alert(error);}
       });
     }
     get_url("http://www.akgenseeds.com/api/v1/counts/user", "counts_user");
