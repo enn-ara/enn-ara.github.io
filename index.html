@@ -125,6 +125,22 @@
 
   $(document).ready(function() {
     
+    function get_url(URL, ID) {
+      $.ajax({
+        type : "get",
+        url : URL,
+        data : "",
+        success : function(data) {
+          // $(ID).html(data);
+          c = new countUp(ID, 0, 500, 1, 2.5);
+          c.start();
+        },
+        error : function(data) { alert("hata");}
+      });
+    }
+    get_markdown("http://www.akgenseeds.com/api/v1/counts/user", "counts_user");
+
+
     $("#js-rotating").Morphext({
       // The [in] animation type. Refer to Animate.css for a list of available animations.
       animation: "flipInX",
@@ -220,6 +236,18 @@
         <h4>Ürünü <b id="js-rotating" class="turquoise_color">Bul, Seç, Karşılaştır!</b><br/></h4>
         <h5>Daha hızlı ve kolay ürün bulmak için tasarlanan güçlü bir uygulama</h5>
 
+        <div class="row">
+          <div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+          <div class="col col-lg-6 col-md-6 col-sm-6 col-xs-6"><hr></div>
+          <div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+        </div>
+
+        <div class="row">
+          <div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3" id="counts_user"></div>
+          <div class="col col-lg-6 col-md-6 col-sm-6 col-xs-6" id="counts_data"></div>
+          <div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3" id="counts_query"></div>
+        </div>
+        
         <div class="row">
           <div class="col col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
           <div class="col col-lg-8 col-md-8 col-sm-8 col-xs-8"><hr></div>
