@@ -1,6 +1,6 @@
 # Enn Ara Homepage
 
-`http://github.com/ennara/enn-ara.github.io/pages/_*.md` → [http://enn-ara.github.io](http://enn-ara.github.io)
+`http://github.com/enn-ara/enn-ara.github.io/pages/_*.md` → [http://enn-ara.github.io](http://enn-ara.github.io)
 
 ## Powered By
 
